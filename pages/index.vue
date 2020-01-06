@@ -15,6 +15,8 @@ export default {
   data() {
     return {
       slickOptions: {
+        arows: false,
+        dots: true,
         slidesToShow: 3
       }
     }
@@ -31,8 +33,5 @@ export default {
   width: 200px;
   height: 100px;
   background-image: linear-gradient(gray 100%, transparent 0);
-}
-.slick-next:before, .slick-prev:before {
-  color: black;
 }
 </style>
