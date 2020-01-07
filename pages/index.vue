@@ -1,12 +1,12 @@
 <template>
   <div class="carousel-wrapper">
-    <no-ssr>
+    <client-only>
       <slick :options="slickOptions">
         <div v-for="i in 5" :key="i" class="img-wrapper">
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </div>
       </slick>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
