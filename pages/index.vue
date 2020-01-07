@@ -2,7 +2,7 @@
   <div class="carousel-wrapper">
     <no-ssr>
       <slick :options="slickOptions">
-        <div v-for="i in 5" :key="i" class="img-warpper">
+        <div v-for="i in 5" :key="i" class="img-wrapper">
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </div>
       </slick>
@@ -28,7 +28,7 @@ export default {
 .carousel-wrapper {
   padding: 40px;
 }
-.img-warpper img {
+.img-wrapper img {
   margin: auto;
   width: 200px;
   height: 100px;
